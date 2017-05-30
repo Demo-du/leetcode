@@ -22,7 +22,7 @@ public class n228 {
         //summaryRanges
 	}
     public static List<String> summaryRanges(int[] nums) {
-    	/*List<String> list=new ArrayList();
+    	List<String> list=new ArrayList();
     	if(nums.length==1){
     		list.add(nums[0]+"");
     		return list;
@@ -38,8 +38,8 @@ public class n228 {
         		list.add(a+"");
         	}
         }
-        return list;*/
-    	List<String> list=new ArrayList();
+        return list;
+    /*	List<String> list=new ArrayList();
     	if(nums.length==1){
     		list.add(nums[0]+"");
     		return list;
@@ -65,7 +65,7 @@ public class n228 {
     	}else{
     		list.add(nums[s]+"->"+nums[nums.length-1]);
     	}
-    	return list;
+    	return list;*/
     }
 }
 

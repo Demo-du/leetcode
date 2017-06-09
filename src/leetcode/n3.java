@@ -18,21 +18,26 @@ public class n3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println(lengthOfLongestSubstring("csddwasc"));
 
 	}
-    public int lengthOfLongestSubstring(String s) {
-    	int len1,len2;
-    	HashMap<String,Integer> tmp=new HashMap<String,Integer>();
-    	String []h=s.split("");
-    	for(String i:h){
-    		tmp.put(i, 0);
-    	}
-    	for(int i=0;i<s.length();i++){
-    		if(tmp.get(h[i]) != null&&tmp.get(h[i])==0){//
-    			
-    			
+    public static int lengthOfLongestSubstring(String s) {
+    	int len1=0,len2=0;
+    	int start=0;
+    	HashMap<Character,Integer> tmp=new HashMap<Character,Integer>();
+    //	HashSet<Character> tt=new HashSet<Character>();
+    	char [] zu=s.toCharArray();
+    	for(int i=0;i<zu.length;i++){
+    		if(tmp.containsKey(zu[i])){
+    			//start=tmp.get(zu[i]);
+    			start=Math.max(start,tmp.get(zu[i])+1);
+    			//start=i+1;
+    		
     		}
+    		tmp.put(zu[i], i);
+    		len2=Math.max(len2, i-start+1);
+    		
     	}
-        return 0;
+        return len2;
     } 
 }

@@ -19,10 +19,30 @@ Subscribe to see which companies asked this question.
  */
 public class n6 {
     public static void main(String[] args){
-    	
+    	System.out.println(convert("abdcsgu",3));
     }
     public static  String convert(String s, int numRows) {
     	char aa[]=s.toCharArray();
-        return null;
+    	int gap=numRows-2;
+    	String [] rel=new String[numRows];
+    	for(int i=0;i<numRows;i++){
+    		rel[i]="";
+    	}
+    	int x=0;
+        while(x<s.length()){
+        	for(int i=0;x<s.length()&&i<numRows;i++){
+        		rel[i]+=aa[x];
+        		x++;
+        	}
+        	for(int i=gap;x<s.length()&&i>0;i--){
+        		rel[i]+=aa[x];
+        		x++;
+        	}	
+        }
+        String sol="";
+        for(int i=0;i<numRows;i++){
+        	sol+=rel[i];
+        }
+        return sol;
     }
 }

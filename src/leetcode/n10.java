@@ -1,5 +1,6 @@
 package leetcode;
 /*
+ * 有问题，要重新看一下
 '.' Matches any single character.
 '*' Matches zero or more of the preceding element.
 
@@ -21,7 +22,7 @@ public class n10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(isMatch("aa","a*"));
+		System.out.println(isMatch("ss","c*a*ss"));
 
 	}
 	public static boolean isMatch(String s, String p) {

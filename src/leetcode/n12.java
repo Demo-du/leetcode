@@ -40,7 +40,7 @@ public class n12 {
     	dic.put(1000, "M");
     	String ans="";
     	int temp=0;
-    	//temp=num/1000;
+    	temp=num/1000;
     	
         return null;
     }

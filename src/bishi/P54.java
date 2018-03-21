@@ -66,7 +66,7 @@ public class P54 {
 				if(map[x][y]==1&&sel[x][y]==false){
 					node t=new node(x,y,1);
 					sel[x][y]=true;
-					if(tmp.dis+1<)
+					//if(tmp.dis+1<)
 				}
 			}
 		}

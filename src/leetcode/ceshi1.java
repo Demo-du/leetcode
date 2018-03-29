@@ -1,6 +1,8 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class ceshi1 {
@@ -45,7 +47,20 @@ public class ceshi1 {
         			}
         		}
         	}
-        	System.out.println(chose[n-1][v]);
+        	System.out.println(F[n-1][v]);
+        	String[]hh=chose[n-1][v].split(" ");
+        	ArrayList<Integer> h2=new ArrayList<Integer>();
+        	for(int i=0;i<hh.length;i++){
+        		if(hh[i].length()>0){
+        			h2.add(Integer.valueOf(hh[i]));
+        			//System.out.println("ss"+hh[i]);
+        		}
+        		
+        	}
+        	Collections.sort(h2);
+        	for(int i=0;i<h2.size();i++){
+        		System.out.println(h2.get(i));
+        	}
         }
 	}
 	
